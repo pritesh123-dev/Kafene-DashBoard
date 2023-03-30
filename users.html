@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene | Users</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #details-report {
+            margin-top: 18px;
+        }
+        #details-report td {
+            padding: 12px 24px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png">
+                <p>Kafene</p>
+            </div>
+            <nav>
+                <a href="./product.html">Orders</a>
+                <a href="./secproduct.html">Products</a>
+                <a class="active" href="./users.html">Users</a>
+            </nav>
+        </div>
+        <div id="logout">
+            <a>Logout</a>
+        </div>
+    </header>
+    <main id="main-div">
+        <section>
+            <h1>Users</h1>
+            <div id="input-login">
+                    <input type="text" placeholder="Search by Name" id="user-name" class="search">
+                    <button type="reset" id="submit-btn" class="reset-btn">Reset</button>
+            </div>
+        </section>
+    </main>
+    <section id="margin-section">
+
+        <section id="details-report">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>User Avatar</th>
+                    <th>Full Name</th>
+                    <th>DoB</th>
+                    <th>Gender</th>
+                    <th>Current Location</th>
+                </tr>
+            </table>
+        </section>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/usersdetails.js"></script>
+</body>
+</html>

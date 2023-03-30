@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene | Orders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #details-report td {
+            padding: 12px 24px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png">
+                <p>Kafene</p>
+            </div>
+            <nav>
+                <a class="active" href="./product.html">Orders</a>
+                <a href="./secproduct.html">Products</a>
+                <a href="./users.html">Users</a>
+            </nav>
+        </div>
+        <div id="logout">
+            <a>Logout</a>
+        </div>
+    </header>
+    <main id="main-div">
+        <section class="orderpage">
+            <h1>Orders</h1>
+            <h3>Filters</h3>
+            <div id="check-grid">
+                <p>Count: <span id="count">0</span></p>
+                    <label>
+                        <input type="checkbox" id="new" checked>
+                        New
+                    </label>
+                    <label>
+                        <input type="checkbox" id="packed" checked>
+                        Packed
+                    </label>
+                    <label>
+                        <input type="checkbox" id="intransit" checked>
+                        InTransit
+                    </label>
+                    <label>
+                        <input type="checkbox" id="delivered" checked>
+                        Delivered
+                    </label>
+            </div>
+        </section>
+        <section id="details-report">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/productdetails.js"></script>
+</body>
+</html>
